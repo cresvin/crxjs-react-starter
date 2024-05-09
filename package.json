@@ -5,7 +5,8 @@
   "description": "CRXJS React Chrome extension starter + TypeScript + TailwindCSS",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "release": "npm run build && npm-build-zip --source dist --name release --name_only true"
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
