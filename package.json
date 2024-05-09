@@ -2,7 +2,7 @@
   "name": "crxjs-react-starter",
   "private": true,
   "version": "0.0.0",
-  "description": "CRXJS Chrome extension React + TypeScript + TailwindCSS",
+  "description": "CRXJS React Chrome extension starter + TypeScript + TailwindCSS",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build"

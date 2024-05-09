@@ -22,6 +22,9 @@ export default defineManifest(async (env) => ({
       js: ["src/scripts/hello.ts"],
     },
   ],
+  chrome_url_overrides: {
+    newtab: "src/pages/new-tab/index.html",
+  },
   icons: {
     "16": "src/assets/icons/16x16.png",
     "32": "src/assets/icons/32x32.png",
