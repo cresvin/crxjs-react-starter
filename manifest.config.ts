@@ -16,6 +16,12 @@ export default defineManifest(async (env) => ({
     service_worker: "src/background/index.ts",
     type: "module",
   },
+  content_scripts: [
+    {
+      matches: ["<all_urls>"],
+      js: ["src/scripts/hello.ts"],
+    },
+  ],
   icons: {
     "16": "src/assets/icons/16x16.png",
     "32": "src/assets/icons/32x32.png",
