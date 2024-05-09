@@ -12,6 +12,10 @@ export default defineManifest(async (env) => ({
   action: {
     default_popup: "src/pages/popup/index.html",
   },
+  background: {
+    service_worker: "src/background/index.ts",
+    type: "module",
+  },
   icons: {
     "16": "src/assets/icons/16x16.png",
     "32": "src/assets/icons/32x32.png",
